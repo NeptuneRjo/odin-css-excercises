@@ -23,7 +23,6 @@ body {
   border-radius: 50%;
   width: 48px;
   height:  48px;
-  
 }
 
 .logo {
@@ -49,13 +48,17 @@ a {
   color: rebeccapurple;  
 }
 
+/* add flex, change margin and padding from default
+   add the gap to ul instead of links */
+
+/* both solutions work */   
+
 ul {
   list-style-type: none;
-  border: solid 1px black;
-}
-
-.profile-image {
-  border: solid 1px black;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
 }
 
 .items {
@@ -65,10 +68,11 @@ ul {
   align-items: center;
 }
 
-
-.links {
+/*.links {
   display: flex;
-  justify-content: space-evenly;
-  gap: 3px;
+  gap: 16px;  
 }
 
+.link-one {
+  margin-left: -40px;
+}*/
