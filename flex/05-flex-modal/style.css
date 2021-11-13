@@ -21,8 +21,9 @@ body {
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
   display: flex;
-  justify-content: flex-end;
-  padding: 10px;
+  gap: 16px;
+  /* justify-content: flex-end; */
+  padding: 16px;
 }
 
 .icon {
@@ -36,7 +37,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
+flex-shrink: 0;
 }
 
 .close-button {
@@ -85,8 +86,12 @@ button.cancel {
 .header {
   display: flex;
   align-items: center;
-  gap: 20px;
+  /*gap: 20px;*/
   font-weight: bold;
-  
+  justify-content: space-between;
+  margin-bottom: 8px;
 }
 
+.text {
+  margin-bottom: 16px;
+}
